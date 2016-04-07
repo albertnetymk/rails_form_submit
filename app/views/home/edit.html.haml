@@ -1,0 +1,8 @@
+%h1 Home#edit
+
+-# = simple_form_for @user, url: '' do |f|
+= simple_form_for @user, as: :user_model, url: '' do |f|
+  = f.input :name
+  = f.input :age, collection: 18..60
+
+  = f.submit 'Save'
